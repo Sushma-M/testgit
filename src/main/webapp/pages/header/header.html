@@ -1,0 +1,13 @@
+<wm-partial data-ng-controller="headerPageController" name="header">
+    <wm-layoutgrid rows="1" columns="2" name="headerlayout" height="6em">
+        <wm-gridrow name="headerrow">
+            <wm-gridcolumn name="headerleft" verticalalign="middle" columnwidth="7">
+                <wm-picture picturesource="resources/images/logos/Other/wavemaker_64x64.png" name="AppLogo"></wm-picture>
+                <wm-label caption="[Application Name]" class="application-name" name="AppName" fontsize="20"></wm-label>
+            </wm-gridcolumn>
+            <wm-gridcolumn name="headerright" horizontalalign="right" verticalalign="middle" columnwidth="5" paddingtop="1.5" paddingunit="em" paddingright="1.5">
+                <wm-search name="siteSearch" dataset="Home, Services, Products, About US, Contact"></wm-search>
+            </wm-gridcolumn>
+        </wm-gridrow>
+    </wm-layoutgrid>
+</wm-partial>

@@ -1,0 +1,54 @@
+<wm-page layouttype="blank" columns="1" data-ng-controller="MainPageController" name="page1">
+    <wm-content name="content1">
+        <wm-row name="row1">
+            <wm-column class="app-content-column" columnwidth="12" paddingleft="15" paddingright="15" name="mainContent">
+                <wm-label caption="Home" fontsize="20" name="Heading"></wm-label>
+                <wm-html height="auto" width="100%" name="bodyContent">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta gravida nisi, ac volutpat nibh adipiscing et. Fusce hendrerit nisi sed augue molestie pellentesque. Proin quis leo condimentum, tempus augue sit amet, aliquet
+                        erat.
+                    </p>
+                </wm-html>
+                <wm-layoutgrid rows="3" columns="3" name="layoutgrid1">
+                    <wm-gridrow name="gridrow1">
+                        <wm-gridcolumn name="gridcolumn1">
+                            <wm-buttongroup name="buttongroup1">
+                                <wm-button caption="left" name="button1"></wm-button>
+                                <wm-button caption="center" name="button2"></wm-button>
+                                <wm-button caption="right" name="button3"></wm-button>
+                            </wm-buttongroup>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn name="gridcolumn2"></wm-gridcolumn>
+                        <wm-gridcolumn name="gridcolumn3"></wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow2">
+                        <wm-gridcolumn name="gridcolumn4">
+                            <wm-composite widget="textarea" name="composite1">
+                                <wm-label class="col-md-2" name="label2"></wm-label>
+                                <wm-textarea name="textarea1"></wm-textarea>
+                            </wm-composite>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn name="gridcolumn5">
+                            <wm-button name="button4"></wm-button>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn name="gridcolumn6">
+                            <wm-composite widget="checkboxset" name="composite3">
+                                <wm-label class="col-md-2" name="label4"></wm-label>
+                                <wm-checkboxset height="auto" name="checkboxset1"></wm-checkboxset>
+                            </wm-composite>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow3">
+                        <wm-gridcolumn name="gridcolumn7"></wm-gridcolumn>
+                        <wm-gridcolumn name="gridcolumn8">
+                            <wm-composite widget="radioset" name="composite2">
+                                <wm-label class="col-md-2" name="label3"></wm-label>
+                                <wm-radioset height="auto" name="radioset1"></wm-radioset>
+                            </wm-composite>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn name="gridcolumn9"></wm-gridcolumn>
+                    </wm-gridrow>
+                </wm-layoutgrid>
+            </wm-column>
+        </wm-row>
+    </wm-content>
+</wm-page>

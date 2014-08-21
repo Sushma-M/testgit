@@ -1,0 +1,23 @@
+<wm-partial data-ng-controller="CommonPageController" name="CommonPage">
+    <wm-view name="loginDialogView" class="dialog-view">
+        <wm-logindialog modal="true" iconname="log-in" title="Login" name="CommonLoginDialog" on-error="CommonLoginDialogError($event, $scope)" on-success="CommonLoginDialogSuccess($event, $scope)">
+            <wm-dialogheader name="loginheader"></wm-dialogheader>
+            <wm-dialogcontent name="logincontent">
+                <wm-form name="loginform">
+                    <wm-message scopedataset="loginMessage" class="app-login-dialog-message" name="loginmessage"></wm-message>
+                    <wm-composite name="usernamefield">
+                        <wm-label caption="Username" class="col-md-4" name="usernamelabel"></wm-label>
+                        <wm-text placeholder="Enter username" class="app-login-dialog-username" name="usernametext" autocomplete="off" autocorrect="off" autocapitalize="off"></wm-text>
+                    </wm-composite>
+                    <wm-composite widget="text" name="passwordfield">
+                        <wm-label caption="Password" class="col-md-4" name="passwordlabel"></wm-label>
+                        <wm-text type="password" placeholder="Enter password" class="app-login-dialog-password" name="passwordtext" autocomplete="off" autocorrect="off" autocapitalize="off"></wm-text>
+                    </wm-composite>
+                </wm-form>
+            </wm-dialogcontent>
+            <wm-dialogactions name="loginactions">
+                <wm-button class="btn-primary" caption="Sign in" name="loginbutton"></wm-button>
+            </wm-dialogactions>
+        </wm-logindialog>
+    </wm-view>
+</wm-partial>

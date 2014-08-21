@@ -1,0 +1,31 @@
+<project name="ProjectBuildHelper" basedir=".">
+    <description>
+        Project Build Helper
+    </description>
+    <property name="webInf" location="src/main/webapp/WEB-INF" />
+    <property name="targetServices" location="target/services" />
+
+    <target name="copy-libs-jar">
+        <mkdir dir="${webInf}/lib"/>
+        <echo>Copying jars from ${basedir}/lib to ${webInf}/lib</echo>
+        <copy todir="${webInf}/lib" overwrite="true">
+            <fileset dir="lib">
+                <exclude name="Readme.txt" />
+            </fileset>
+        </copy>
+    </target>
+    <target name="copy-services">
+        <mkdir dir="${targetServices}"/>
+        <echo>Copying src folders from each folder in ${basedir}/services to ${targetServices}</echo>
+        <copy todir="${targetServices}" overwrite="true" failonerror="false">
+            <fileset dir="services"/>
+            <scriptmapper language="javascript">
+                if(source.indexOf("src/") != -1) {
+                self.addMappedName(source.substr(source.indexOf("src/")+"src/".length));
+                }
+            </scriptmapper>
+        </copy>
+    </target>
+
+    <target name="init" depends="copy-libs-jar,copy-services"></target>
+</project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This is a Studio Managed File. If you customize this file by hand, use 
+	of Studio Security tooling may revert your customizations -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:security="http://www.springframework.org/schema/security"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                    http://www.springframework.org/schema/beans/spring-beans.xsd
+                    http://www.springframework.org/schema/security 
+                    http://www.springframework.org/schema/security/spring-security.xsd">
+
+  <security:global-method-security pre-post-annotations="enabled" />
+                    
+  <security:http auto-config="true" security="none" >
+  </security:http>
+                          
+</beans> 

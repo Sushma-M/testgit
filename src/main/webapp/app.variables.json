@@ -1,0 +1,21 @@
+{
+    "goToPage-Main": {
+        "category": "wm.NavigationVariable",
+        "operation": "gotoPage",
+        "pageName": "Main",
+        "_id": "wm-wm.NavigationVariable1389180517517",
+        "name": "goToPage-Main"
+    },
+    "supportedLocale": {
+        "name": "supportedLocale",
+        "type": "string",
+        "isList": false,
+        "owner": "App",
+        "dataSet": {
+            "en": "English"
+        },
+        "saveInPhonegap": false,
+        "category": "wm.Variable",
+        "_id": "wm-wm.Variable1402640443182"
+    }
+}

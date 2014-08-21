@@ -1,0 +1,18 @@
+<wm-partial data-ng-controller="topnavPageController" name="topnav">
+    <wm-list class="col-md-6" name="leftTopLinks">
+        <wm-list-item name="list_home">
+            <wm-button caption="Home" name="homeButton" iconname="home" class="active"></wm-button>
+        </wm-list-item>
+        <wm-list-item name="list_services">
+            <wm-button caption="Order" name="orderButton" iconname="list"></wm-button>
+        </wm-list-item>
+    </wm-list>
+    <wm-list horizontalalign="right" class="col-md-6" name="rightTopLinks">
+        <wm-list-item name="list_home">
+            <wm-button caption="Help" name="helpButton" iconname="question-sign"></wm-button>
+        </wm-list-item>
+        <wm-list-item name="list_services">
+            <wm-button caption="Logout" name="logoutButton" iconname="user" on-click="logoutVariable"></wm-button>
+        </wm-list-item>
+    </wm-list>
+</wm-partial>
